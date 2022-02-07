@@ -10,8 +10,8 @@
   --white-color: #ffffff;
 }
 
-.body {
-  background-color: #e5e5e5;
+body {
+  background-color: #ffffff;
   color: var(--title-text-color);
 
   font-family: Roboto, serif;
@@ -47,6 +47,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -102,6 +103,7 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
 /* блок Организационные моменты */
@@ -149,6 +151,7 @@
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
+  cursor: pointer;
 }
 
 .promo-btns:hover,
