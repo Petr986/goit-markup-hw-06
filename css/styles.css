@@ -30,6 +30,7 @@ body {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 .logo-web {
@@ -44,6 +45,7 @@ body {
 
 .site-nav .link {
   color: var(--title-text-color);
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -54,6 +56,18 @@ body {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
+
+.site-nav .current {
+  color: var(--accent-color);
+}
+
+/* .site-nav .current:active {
+  color: var(--accent-color);
+} */
+/* 
+.current {
+  color: #2196f3;
+} */
 
 .site-adress {
   color: var(--primary-text-color);
@@ -147,6 +161,7 @@ body {
 .promo-btns {
   background-color: #f5f4fa;
   color: var(--title-text-color);
+  font-family: Roboto, cursive;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -187,11 +202,13 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 .page-card {
   color: var(--white-color);
   font-size: 14px;
+  font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
@@ -200,6 +217,7 @@ body {
 .page-adress {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
+  font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
@@ -208,4 +226,21 @@ body {
 .page-adress:hover,
 .page-adress:focus {
   color: var(--accent-color);
+}
+
+.social-links .link {
+  color: teal;
+}
+
+.social-links .link:hover,
+.social-links .link:focus {
+  color: orange;
+}
+
+.social-links .link:active {
+  color: red;
+}
+
+.social-links .link:visited {
+  color: green;
 }
