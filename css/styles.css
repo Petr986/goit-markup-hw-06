@@ -139,6 +139,9 @@ img {
 }
 
 .site-adress {
+  display: flex;
+  align-items: baseline;
+
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -150,6 +153,24 @@ img {
 .site-adress:hover,
 .site-adress:focus {
   color: var(--accent-color);
+}
+
+.icon-adress {
+  margin-right: 10px;
+  fill: #afb1b8;
+}
+
+/* .icon-adress:hover,
+.icon-adress:focus {
+  fill: var(--accent-color);
+} */
+
+.site-adress:hover .icon-adress {
+  fill: var(--accent-color);
+}
+
+.site-adress:focus .icon-adress {
+  fill: var(--accent-color);
 }
 
 /* блок main */
@@ -337,8 +358,88 @@ img {
   color: var(--primary-text-color);
 }
 
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: #fff;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--accent-color);
+}
+
 .socials-icon {
-  fill: red;
+  fill: #afb1b8;
+}
+
+.socials-link:hover .socials-icon {
+  fill: var(--white-color);
+}
+
+.socials-link:focus .socials-icon {
+  fill: var(--white-color);
+}
+
+/* блок Партнеры */
+
+.partners-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.partners-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.partners-item:hover {
+  background-color: var(--accent-color);
+}
+
+.partners-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.partners-link:hover,
+.partners-link:focus {
+  background-color: var(--white-color);
+}
+
+.partners-icon {
+  fill: #afb1b8;
+}
+
+.partners-link:hover .partners-icon {
+  fill: var(--accent-color);
+}
+
+.partners-link:focus .partners-icon {
+  fill: var(--accent-color);
 }
 
 /* блок из портфолио, оформление кнопок */
@@ -425,9 +526,16 @@ img {
   padding-bottom: 60px;
 }
 
+.footer-box {
+  display: flex;
+  align-items: baseline;
+}
+
 .footer-container {
   display: flex;
   flex-direction: column;
+
+  margin-right: 70px;
 }
 
 .footer-logo {
@@ -472,4 +580,52 @@ img {
 .page-adress:hover,
 .page-adress:focus {
   color: var(--accent-color);
+}
+
+.footer-hero-name {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-socials-icon {
+  fill: var(--white-color);
+}
+
+.footer-socials-link:hover .socials-icon {
+  fill: var(--white-color);
+}
+
+.footer-socials-link:focus .socials-icon {
+  fill: var(--white-color);
 }
