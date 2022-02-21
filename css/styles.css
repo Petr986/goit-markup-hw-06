@@ -331,17 +331,25 @@ img {
 .gallery-menu {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .gallery-item {
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
+  margin-right: 30px;
+}
+
+.gallery-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.gallery-item.gallery-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
 }
 
 .hero-gallery {
-  margin: 20px 24px 20px 24px;
+  padding: 20px 24px 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .gallery-title {
