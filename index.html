@@ -62,7 +62,16 @@
                 <h1 class="el-title">
                     Эффективные решения для вашего бизнеса
                 </h1>
-                <button type="button" class="btn">Заказать услугу</button>
+                <button type="button" class="btn" data-modal-open>Заказать услугу</button>
+            </div>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button data-modal-close>
+                        <svg class="modal-button" width="11" height="11" >
+                            <use href="./img/icon/symbol-defs.svg#icon-Vector-1" class="modal-close"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </section>
         <!--Организационные моменты-->
@@ -112,14 +121,17 @@
                     Чем мы занимаемся
                 </h2>
                 <ul class="classes-list list">
-                    <li class="classes-item">
+                    <li class="classes-item classes-meta">
                         <img src="./img/studio/keyboard.jpg" alt="картинка с клавиатурой" width="370">
+                        <div class="classes-out">Десктопные приложения</div>
                     </li>
-                    <li class="classes-item">
+                    <li class="classes-item classes-meta">
                         <img src="./img/studio/notebook.jpg" alt="картинка с ноутбуком" width="370">
+                        <div class="classes-out">Мобильные приложения</div>
                     </li>
-                    <li class="classes-item">
+                    <li class="classes-item classes-meta">
                         <img src="./img/studio/tablet.jpg" alt="картинка с планшетом" width="370">
+                        <div class="classes-out">Дизайнерские решения</div>
                     </li>
                 </ul>
             </div>
@@ -453,6 +465,7 @@
                 </ul>
             </div>
         </div>
-    </footer> 
+    </footer>
+    <scrip src="./js/modal.js"></scrip> 
 </body>
 </html>

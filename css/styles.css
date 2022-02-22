@@ -236,6 +236,34 @@ img {
   background-color: var(--accent-color);
 }
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+  opacity: 1;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 528px;
+  height: 581px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background: var(--white-color);
+}
+
 /* блок Организационные моменты */
 
 .organization-list {
@@ -308,6 +336,31 @@ img {
 
 .classes-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.classes-meta {
+  position: relative;
+}
+
+.classes-out {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 370px;
+  height: 70px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+  background: rgba(47, 48, 58, 0.8);
 }
 
 /* блок наша команда */
@@ -511,6 +564,26 @@ img {
 
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.gellery-meta {
+  position: relative;
+}
+
+.gellery-out {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  padding: 63px 24px;
+
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+
+  color: var(--white-color);
+  background-color: rgba(33, 150, 243, 0.9);
 }
 
 .hero-gallery {
