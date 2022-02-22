@@ -501,6 +501,7 @@ img {
   display: block;
   width: 370px;
   height: 404px;
+  text-decoration: none;
   color: var(--title-text-color);
 }
 
