@@ -500,7 +500,7 @@ img {
 
 .socials-icon {
   fill: #afb1b8;
-  
+
   transition-property: fill;
   transition-duration: var(--time-for-hover);
   transition-timing-function: var(--time-function);
@@ -524,17 +524,6 @@ img {
   margin-right: 30px;
 }
 
-/* .partners-item {
-  transition-property: background-color, border;
-  transition-duration: var(--time-for-hover);
-  transition-timing-function: var(--time-function);
-} */
-
-/* .partners-item:hover {
-  background-color: var(--accent-color);
-  border: 1px solid var(--accent-color);
-} */
-
 .partners-link {
   display: flex;
   align-items: center;
@@ -546,14 +535,13 @@ img {
   border-radius: 4px;
   background-color: #fff;
 
-  transition-property: color, border;
+  transition-property: border;
   transition-duration: var(--time-for-hover);
   transition-timing-function: var(--time-function);
 }
 
 .partners-item:hover .partners-link,
 .partners-item:focus .partners-link {
-  color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
 
@@ -562,7 +550,6 @@ img {
   transition-property: fill;
   transition-duration: var(--time-for-hover);
   transition-timing-function: var(--time-function);
-
 }
 
 .partners-link:hover .partners-icon,
@@ -595,7 +582,7 @@ img {
   text-align: center;
   cursor: pointer;
 
-  transition-property: color, background-color, box-shadow:;
+  transition-property: color, background-color, box-shadow;
   transition-duration: var(--time-for-hover);
   transition-timing-function: var(--time-function);
 
