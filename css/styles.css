@@ -499,14 +499,14 @@ img {
 }
 
 .socials-icon {
+  fill: #afb1b8;
+  
   transition-property: fill;
   transition-duration: var(--time-for-hover);
   transition-timing-function: var(--time-function);
-
-  fill: #afb1b8;
 }
 
-.socials-link:hover,
+.socials-link:hover .socials-icon,
 .socials-link:focus .socials-icon {
   fill: var(--white-color);
 }
