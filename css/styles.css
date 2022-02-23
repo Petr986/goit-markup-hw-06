@@ -281,6 +281,9 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+
+  transition-duration: var(--time-for-hover);
+  transition-timing-function: var(--time-function);
 }
 
 .backdrop.is-hidden {
@@ -538,18 +541,13 @@ img {
   width: 170px;
   height: 92px;
 
-  transition-property: background-color, fill;
-  transition-duration: var(--time-for-hover);
-  transition-timing-function: var(--time-function);
-
   border: 1px solid #afb1b8;
   border-radius: 4px;
   background-color: #fff;
-}
 
-.partners-link:hover,
-.partners-link:focus {
-  background-color: var(--white-color);
+  transition-property: fill;
+  transition-duration: var(--time-for-hover);
+  transition-timing-function: var(--time-function);
 }
 
 .partners-item:hover .partners-link,
