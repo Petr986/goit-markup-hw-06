@@ -71,6 +71,60 @@
                             <use href="./img/icon/symbol-defs.svg#icon-Vector-1"></use>
                         </svg>
                     </button>
+                    <form>
+                        <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+                        <div class="form-modal" role="group">
+                            <!-- 1 форма -->
+                            <div class="form-author">
+                                <label for="name">
+                                    <span class="form-name">Имя</span>
+                                </label>
+                                <svg class="form-icon" width="18" height="18">
+                                    <use href="./img/icon/symbol-defs.svg#icon-person-black"></use>
+                                </svg>
+                                <input class="" type="text" name="name" id="name" />
+                            </div>
+                            <!-- 2 форма -->
+                            <div class="form-author">
+                                <label for="tel">
+                                    <span class="form-name">Телефон</span>
+                                </label>
+                                <svg class="form-icon" width="18" height="18">
+                                    <use href="./img/icon/symbol-defs.svg#icon-phone"></use>
+                                </svg>
+                                <input class="" type="tel" name="tel" id="tel" />
+                            </div>
+                            <!-- 3 форма -->
+                            <div class="form-author">
+                                <label for="email">
+                                    <span class="form-name">Почта</span>
+                                </label>
+                                <svg class="form-icon" width="18" height="18">
+                                    <use href="./img/icon/symbol-defs.svg#icon-sms"></use>
+                                </svg>
+                                <input class="" type="email" name="email" id="email"/>
+                            </div>
+                            <!-- Коментарии -->
+                            <div class="form-author">
+                                <label for="comments">
+                                    <span class="form-name">Коментарии</span>
+                                    <textarea class="form-textarea" name="comments" id="comments" placeholder="Введите текст"></textarea>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- форма Условии договора -->
+                        <div class="form-terms">
+                            <label class="form-checkbox" for="checkbox">
+                                <input class="form-checkbox-standart visually-hidden" type="checkbox" name="checkbox" id="checkbox" />
+                                <span class="form-checkbox-icon" aria-checked="false" role="checkbox"> </span>
+                                Соглашаюсь с рассылкой и принимаю
+                                <span class="form-terms-text">Условия договора</span>
+                            </label>
+                        </div>
+                        
+                        <button class="button form-button" type="submit">Отправить</button>
+
+                    </form>                           
                 </div>
             </div>
         </section>
