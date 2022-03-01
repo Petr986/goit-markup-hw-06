@@ -2,12 +2,14 @@
 /* вторичный цвет текста #757575 */
 /* акцент #2196f3 */
 /* белый цвет #FFFFFF */
+/* цвет фона подвала #2f303a */
 
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --white-color: #ffffff;
+  --footer-color: #2f303a;
   --time-for-hover: 250ms;
   --time-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -347,6 +349,10 @@ img {
   cursor: pointer;
 }
 
+.modal-close:hover {
+  fill: var(--accent-color);
+}
+
 /* modal-form block */
 
 .form-title {
@@ -400,8 +406,8 @@ img {
   transition-timing-function: var(--time-function);
 }
 
-.form-author:hover .form-input,
-.form-author:focus .form-input {
+.form-author:hover .form-icon,
+.form-author:focus .form-icon {
   fill: var(--accent-color);
 
   border-color: var(--accent-color);
@@ -412,10 +418,10 @@ img {
 }
 
 .form-name {
+  display: flex;
   padding-bottom: 4px;
 
   font-family: Roboto;
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -428,8 +434,8 @@ img {
 .form-icon {
   position: absolute;
 
-  top: 33px;
-  left: 10px;
+  top: 36px;
+  left: 14px;
   width: 18px;
   height: 18px;
 }
@@ -483,6 +489,7 @@ textarea {
 
 .form-checkbox {
   display: flex;
+  align-items: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -500,9 +507,8 @@ textarea {
   transition-timing-function: var(--time-function);
 }
 
-.form-checkbox-castom {
+.form-checkbox-standart {
   display: flex;
-  justify-content: center;
   align-items: center;
 
   margin-right: 7px;
@@ -905,7 +911,7 @@ textarea {
 /* блок футер */
 
 .page-footer {
-  background-color: #2f303a;
+  background-color: var(--footer-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -1008,4 +1014,46 @@ textarea {
 .footer-socials-link:hover,
 .footer-socials-link:focus .socials-icon {
   fill: var(--white-color);
+}
+
+/* футер форма */
+
+.form {
+  margin-left: 93px;
+}
+
+.footer-form-container {
+  display: flex;
+}
+
+.footer-form-email {
+  margin-right: 12px;
+  padding-left: 15px;
+
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--footer-color);
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.footer-form-text {
+  display: block;
+
+  margin: 7px 10px 15px 10px;
+  width: 109px;
+  height: 30px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  border-radius: 4px;
+}
+
+.footer-form-send {
 }
