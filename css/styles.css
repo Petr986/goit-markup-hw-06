@@ -1041,19 +1041,16 @@ textarea {
 }
 
 .footer-form-text {
-  display: block;
-
-  margin: 7px 10px 15px 10px;
-  width: 109px;
-  height: 30px;
+  display: inline-block;
+  margin-right: 10px;
 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-
   border-radius: 4px;
 }
 
 .footer-form-send {
+  position: absolute;
 }
