@@ -40,7 +40,16 @@ img {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
@@ -340,17 +349,18 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background: var(--white-color);
+
+  transition-property: border-color;
+  transition-duration: var(--time-for-hover);
+  transition-timing-function: var(--time-function);
 }
 
 .modal-close {
-  position: absolute;
-  top: 8px;
-  right: 7px;
   cursor: pointer;
 }
 
-.modal-close:hover,
-.modal-close:focus {
+.modal-button:hover,
+.modal-button:focus {
   fill: var(--accent-color);
 }
 
@@ -388,6 +398,8 @@ img {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  outline: none;
 }
 
 .form-author input:hover,
@@ -421,7 +433,7 @@ img {
 .form-name {
   display: flex;
   padding-bottom: 4px;
-
+  
   font-family: Roboto;
   font-weight: 400;
   font-size: 12px;
@@ -458,6 +470,8 @@ textarea {
   padding-top: 12px;
   padding-left: 16px;
 
+  outline: none;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -475,70 +489,71 @@ textarea {
   transition-timing-function: var(--time-function);
 }
 
-.form-terms {
+.modal__check {
   display: flex;
-
+  
   margin: 10px 52px 20px 52px;
-
+  
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-
+  
   color: rgb(117, 117, 117);
-}
-
-.form-checkbox {
-  display: flex;
-  align-items: center;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-
-  color: rgb(117, 117, 117);
-}
-
-.form-checkbox-standart:checked + .form-checkbox-icon {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-
-  transition-property: background-color, border-color;
+  transition-property: border-color;
   transition-duration: var(--time-for-hover);
   transition-timing-function: var(--time-function);
 }
 
-.form-checkbox-standart {
+.check {
   display: flex;
   align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+    
+  color: rgb(117, 117, 117);
+}
 
-  margin-right: 7px;
+
+.check__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.check__box {
+  display: inline-block;
+  margin-right: 7px; 
 
   width: 16px;
   height: 15px;
 
-  background-image: url(../img/icon/square.svg);
-  background-position: center;
-  background-size: cover;
-  border: 2px solid var(--title-text-color);
-  border-radius: 2px;
+  background-image: url(../img/icon/square.svg) 
 }
 
-.form-terms-text {
+.check__input:checked + .check__box {
+  background-image: url(../img/icon/icon-check.svg);
+}
+
+.check__terms--text {
   margin-left: 4px;
   text-decoration: underline;
   cursor: pointer;
   color: var(--accent-color);
-}
+  } 
+
 
 .form-button {
   display: flex;
   align-items: center;
 
   margin: auto;
-  /* margin-bottom: 40px; */
   padding-left: 56px;
 }
+
 /* блок Организационные моменты */
 
 .organization-list {
